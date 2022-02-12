@@ -1,162 +1,120 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Conta Certa - Controle de contas de bar 🍻</title>
+  <head>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/9.6.6/firebase-app-compat.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/9.6.6/firebase-auth-compat.js"></script>
-  <script defer src="/__/firebase/9.6.6/firebase-database-compat.js"></script>
-  <script defer src="/__/firebase/9.6.6/firebase-firestore-compat.js"></script>
-  <script defer src="/__/firebase/9.6.6/firebase-functions-compat.js"></script>
-  <script defer src="/__/firebase/9.6.6/firebase-messaging-compat.js"></script>
-  <script defer src="/__/firebase/9.6.6/firebase-storage-compat.js"></script>
-  <script defer src="/__/firebase/9.6.6/firebase-analytics-compat.js"></script>
-  <script defer src="/__/firebase/9.6.6/firebase-remote-config-compat.js"></script>
-  <script defer src="/__/firebase/9.6.6/firebase-performance-compat.js"></script>
-  <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <title>Conta Certa - Política de Privacidade</title>
 
-  <!-- Include -->
-  <script>
-    $(function () {
-      $("#includedContent").load("privacy.html");
-    });
-  </script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <style media="screen">
-    body {
-      background: #ECEFF1;
-      color: rgba(0, 0, 0, 0.87);
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+<!--
 
-    #message {
-      background: white;
-      max-width: 360px;
-      margin: 100px auto 16px;
-      padding: 32px 24px;
-      border-radius: 3px;
-    }
+TemplateMo 570 Chain App Dev
 
-    #message h2 {
-      color: #ffa100;
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0 0 8px;
-    }
+https://templatemo.com/tm-570-chain-app-dev
 
-    #message h1 {
-      font-size: 22px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      margin: 0 0 16px;
-    }
+-->
 
-    #message p {
-      line-height: 140%;
-      margin: 16px 0 24px;
-      font-size: 14px;
-    }
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
 
-    #message a {
-      display: block;
-      text-align: center;
-      background: #039be5;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
-      padding: 16px;
-      border-radius: 4px;
-    }
-
-    #message,
-    #message a {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-
-    #load {
-      color: rgba(0, 0, 0, 0.4);
-      text-align: center;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-
-      body,
-      #message {
-        margin-top: 0;
-        background: white;
-        box-shadow: none;
-      }
-
-      body {
-        border-top: 16px solid #ffa100;
-      }
-    }
-  </style>
-</head>
+  </head>
 
 <body>
-  <!--
-    <div id="message">
-    <h2>Welcome</h2>
-    <h1>Firebase Hosting Setup Complete</h1>
-    <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something
-      extraordinary!</p>
-    <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </div>
-  <p id="load">Firebase SDK Loading&hellip;</p> -->
+  <!-- ***** Preloader End ***** -->
 
-  <div id="includedContent" style="margin-left: 5%; margin-right: 3%; margin-top: 2%; margin-bottom: 5%git;" ></div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const loadEl = document.querySelector('#load');
-      // // The Firebase SDK is initialized and available here!
-      //
-      // firebase.auth().onAuthStateChanged(user => { });
-      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-      // firebase.firestore().doc('/foo/bar').get().then(() => { });
-      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-      // firebase.messaging().requestPermission().then(() => { });
-      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-      // firebase.analytics(); // call to activate
-      // firebase.analytics().logEvent('tutorial_completed');
-      // firebase.performance(); // call to activate
-      //
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Política de Privacidade <em>Conta Certa</em></h4>
+            <p>(Última atualização em: 11 de fevereiro de 2022) </p>
+            <img src="assets/images/heading-line-dec.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="service-item first-service"> 
+            <p align="justify">Como parte da nossa proposta de diminuir suas preocupações nos momentos de diversão e interação com seus amigos e familiares, será necessário que você compartilhe conosco os contatos da agenda de seu smartphone. É importante para nós que você se sinta seguro e nos confie essas informações ao usar nosso aplicativo. Dedique alguns minutos para ler esta Privacy Policy e compreender quais informações pessoais serão utilizadas pelo aplicativo para lhe propor uma melhor experiência. </p> 
+			<p align="justify"> Em geral, serão utilizados apenas informações que nos permitem oferecer melhores Serviços a você. Isso inclui, por exemplo, tarefas simples como utilizar nomes e fotos de sua agenda de contatos para que você possa escolher, de forma mais rápida e intuitiva, quem irá dividir a conta com você em cada ocasião. </p>
 
-      /*try {
-        let app = firebase.app();
-        let features = [
-          'auth',
-          'database',
-          'firestore',
-          'functions',
-          'messaging',
-          'storage',
-          'analytics',
-          'remoteConfig',
-          'performance',
-        ].filter(feature => typeof app[feature] === 'function');
-        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-      } catch (e) {
-        console.error(e);
-        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-      }*/
-    });
-  </script>
+            <h3>Âmbito e autorização</h3>
+			<p align="justify">Antes de começar a melhorar seus , é importante que você compreenda que, ao utilizar nossos Serviços, você concede autorização para que o aplicativo utilize informações de sua agenda telefônica, seu nome e usuário de contas cadastradas em seu smartphone. Entretanto, nunca vamos divulgar quaisquer conteúdos que você armanazena ou compartilha em seu dispositivo ou redes sociais. Você pode ter certeza que suas informações serão utilizadas apenas conforme descrito nesta Política. </p>
+			
+            <h3>Informações que nós coletamos</h3>
+			<p align="justify">Primeiramente, garantimos para você que nós coletamos o mínimo de informações necessárias para concretizar as finalidades estabelecidas nesta Política (veja abaixo):</p>
+    
+               <p align="justify">&nbsp&nbsp&nbsp<strong>(a) Informações de cadastro e conta:</strong> Ao usar nossos diversos Serviços, você nos fornece voluntariamente suas informações pessoais (como nome e usuário), mas você continuará anônimo para nós. Isso significa que seu nome e foto (se optar por fornecê-los) estarão visíveis no aplicativo, mas apenas você poderá visualizá-las. </p>
+               <p align="justify">&nbsp&nbsp&nbsp<strong>(b) Informações de contatos:</strong> Ao utilizar o aplicativo, os contatos da sua agenda serão utilizados para que você possa indicar as pessoas que estão presentes na ocasião e que irão dividir com você o valor da conta. </p>
+            <p align="justify">Nós vamos receber outras informações (como o conteúdo que você visualizou e com o qual interagiu) mediante seu uso do nosso aplicativo. Além disso, nós recebemos informações demográficas e comportamento de uso do aplicativo, como horário, tempo de utilização, telas utilizadas, dentre outras. De qualquer forma, é importante ressaltar que todas informações obtidas serão anônimas, não tendo acesso a detalhes de quaisquer dados pessoais.</p>
+			
+			<h3>Usos e retenção</h3>
+			<p align="justify">As informações que nós coletamos garantem que você possa utilizar o Serviço do Conta Certa. Suas informações nos ajudam em nossa proposta de melhorar continuamente nossos Serviços, oferecendo, futuramente, novas experiências para você. Como parte dessa proposta, poderemos usar suas informações para as seguintes finalidades:</p>
+			<p align="justify">&nbsp&nbsp&nbsp<strong>(a) Melhorar nossos Serviços:</strong> Nós usamos as informações utilização do aplicativo para melhor compreender o comportamento e tendência de comportamento, detectar potenciais falhas e problemas técnicos (isso nos ajuda a notar coisas como travamento em determinados celulares, redução do desempenho, cálculos errados, etc.) para melhorar nossos Serviços. Nós mantemos todas informações disponibilidas em sigilo e não utilizaremos tais informações para quaisquer outras finalidades. Nós usamos informações agregadas sobre nossos usuários e informações não pessoais para analisar nossos Serviços e o comportamento do usuário e preparar relatórios agregados.</p>
+			<p align="justify">&nbsp&nbsp&nbsp<strong>(b) Apresentar ofertas interessantes para você:</strong> Como parte dos nossos Serviços, o Conta Certa pode usar suas informações para enviar notificações de mensagem para você relacionadas a ofertas dos nossos Serviços ou de parceiros que consideremos interessantes para você. Caso não queira receber essas notificações, você pode ajustar as configurações da sua conta para rejeitá-las ou cancelar o recebimento de outras notificações a qualquer momento. Também podemos usar dados de localização de WPS para apresentar ofertas baseadas em localização da publicidade do nosso Serviço ou de terceiros.  </p>
+			<p align="justify">&nbsp&nbsp&nbsp<strong>(c) Comunicarmos com você:</strong> Nós poderemos usar suas informações para entrar em contato com você (através de mensagens ou outros meios) para lembrá-lo da importância e diferencial na utilização do nosso serviço.</p>
+			
+			
+			<h3>Divulgação</h3>
+			<p align="justify">Queremos que você saiba que nós não iremos, sob hipótese alguma, compartilhar com terceiros suas informações pessoais.</p>
+			
+			<h4>Informações que você compartilha publicamente</h4>
+			<p align="justify">Uma das funcões do aplicativo permite que você compartilhe informações com outros de forma pública ou privada. Se você publicar informações através de sites de mídias sociais, plug-ins ou outros aplicativos, não se esqueça que essas informações, dependendo das suas configurações de privacidade, poderão também se tornar públicas na internet. Não podemos prevenir ou controlar o uso posterior dessas informações, portanto, certifique-se de só publicar informações em locais e pessoas que você gostaria. </p>
+			
+			<h4>Suas escolhas</h4>
+			<p align="justify">Uma das funcões do aplicativo permite que você compartilhe informações com outros de forma pública ou privada. Se você publicar informações através de sites de mídias sociais, plug-ins ou outros aplicativos, não se esqueça que essas informações, dependendo das suas configurações de privacidade, poderão também se tornar públicas na internet. Não podemos prevenir ou controlar o uso posterior dessas informações, portanto, certifique-se de só publicar informações em locais e pessoas que você gostaria. </p>
+			<p align="justify">De tempos em tempos, o Conta Certa poderá enviar notificações para você relacionadas à utilização do Serviço. Também poderemos enviar notificações sobre ofertas e propagandas de terceiros que, segundo nosso critério, possam ser do seu interesse. Caso não queira receber essas notificações, você pode ajustar as configurações do seu sistema para rejeitá-las ou cancelar o recebimento de outras notificações a qualquer momento ao não utilizar nosso serviço.</p>
+
+			<h3>Divulgação</h3>
+			<p align="justify">Nós sabemos que a segurança é importante para os nossos usuários e nós nos preocupamos com a segurança das suas informações. Como mencionado anteriormente, não temos acesso direto às suas informações pessoais, as mesmas são utilizadas apenas pelo aplicativo para melhorar sua experiência de uso. Assim, todos os dados do seu smartphone não são enviadas para quaisquer servidores ou websites pelo nosso aplicativo.</p>
+			
+
+			<h3>Fale Conosco</h3>
+			<p align="justify">Caso ainda tenha dúvidas sobre a nossa política de privacidade, sinta-se à vontade para nos enviar um e-mail no endereço <a href = "mailto: auros.contato@gmail.com">auros.contato@gmail.com</a>.</p>
+		  </div>
+        </div> 
+      </div>
+    </div>
+  </div> 
+   
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
-
 </html>
